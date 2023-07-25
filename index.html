@@ -45,7 +45,7 @@
    <script src="https://kit.fontawesome.com/7aba5113e1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="text-poppins">
    <header class="container mx-auto md:px-5 lg:px-12 xl:px-20">
       <!-- navbar -->
       <nav class="my-8 font-poppins">
@@ -167,6 +167,7 @@
          </div>
       </section>
    </header>
+   
    <main class="container mx-auto md:px-5 lg:px-12 xl:px-20">
       <!-- Practice area section -->
       <section class="my-32">
@@ -449,25 +450,92 @@
             <div class="flex-1 flex items-center">
                <form action="">
                   <label for="name">
-                     <input type="text" id="name" placeholder="Your Name" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                     <input type="text" id="name" placeholder="Your Name"
+                        class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
                   </label>
                   <label for="email">
-                     <input type="email" id="email" placeholder="Your Email" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                     <input type="email" id="email" placeholder="Your Email"
+                        class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
                   </label>
                   <label for="subject">
-                     <input type="text" id="subject" placeholder="Subject" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                     <input type="text" id="subject" placeholder="Subject"
+                        class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
                   </label>
                   <label for="message">
-                     <textarea id="message" cols="30" rows="5" placeholder="Your Message" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg"></textarea>
+                     <textarea id="message" cols="30" rows="5" placeholder="Your Message"
+                        class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg"></textarea>
                   </label>
-                  <input type="button" value="Send Message" class="bg-color-primary text-white font-semibold py-5 hover:text-color-primary hover:bg-gray-200 rounded md:rounded-lg ease-in-out duration-150 cursor-pointer text-base text-center w-full">
+                  <input type="button" value="Send Message"
+                     class="bg-color-primary text-white font-semibold py-5 hover:text-color-primary hover:bg-gray-200 rounded md:rounded-lg ease-in-out duration-150 cursor-pointer text-base text-center w-full">
                </form>
             </div>
          </div>
       </section>
    </main>
-   <footer>
 
+   <footer class="footer p-10 bg-[#111] text-base-content text-white">
+      <div>
+         <span class="flex items-center gap-x-4 mb-8">
+            <img class="text-white" src="./images/icon.png" alt="">
+            <span class="font-eb-garamond text-4xl">Justice</span>
+         </span>
+         <p>
+            There are many variations of
+            <br>
+            passages of Lorem Ipsum
+            <br>
+            available, but the majority have
+            <br>
+            suffered alteration in some
+            <br>
+            form, by injected humour.
+         </p>
+      </div>
+      <div>
+         <span class="text-white font-eb-garamond text-2xl mb-8">Usefull Link</span>
+         <a class="link link-hover my-1">Home</a>
+         <a class="link link-hover my-1">About us</a>
+         <a class="link link-hover my-1">Cases</a>
+         <a class="link link-hover my-1">Blog</a>
+         <a class="link link-hover my-1">Contact Us</a>
+      </div>
+      <div>
+         <span class="text-white font-eb-garamond text-2xl mb-8">Contact Now</span>
+         <p class="text-[#CFCFCF]">
+            555 4th 5t NW, Washington
+            <br>
+            DC 20530, United States
+            <br>
+            <br>
+            +88 01750 000 000
+            <br>
+            +88 01750 000 000
+            <br>
+            <br>
+            info@gmail.com
+            <br>
+            info@gmail.com
+         </p>
+      </div>
+      <div>
+         <span class="text-white font-eb-garamond text-2xl mb-8">Subscribe</span>
+         <p>
+            Subscribe for our latest &
+            <br>
+            Articles. We Won’t Give You
+            <br>
+            Spam Mails
+         </p>
+         <div class="form-control w-80">
+            <label class="label">
+               <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+               <input type="text" placeholder="Email Address" class="input input-bordered w-full pr-16" />
+               <button class="btn bg-color-primary border-0 text-white hover:text-color-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            </div>
+         </div>
+      </div>
    </footer>
 </body>
 

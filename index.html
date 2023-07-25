@@ -20,8 +20,11 @@
          theme: {
             extend: {
                colors: {
-                  clifford: '#da373d',
+                  'color-custom-gray': '#A0A0A0',
                   'color-primary': '#B68C5A',
+               },
+               backgroundImage: {
+                  'img-bg': "url('./images/banner.png')",
                }
             }
          }
@@ -39,10 +42,10 @@
 </head>
 
 <body>
-   <header class="container mx-auto px-3 md:px-12 lg:px-20 xl:px-32">
+   <header class="container mx-auto md:px-5 lg:px-12 xl:px-20">
       <!-- navbar -->
       <nav class="my-8 font-poppins">
-         <div class="navbar bg-base-100">
+         <div class="navbar p-0">
             <div class="navbar-start">
                <div class="dropdown">
                   <label tabindex="0" class="btn btn-ghost xl:hidden">
@@ -139,7 +142,21 @@
          </div>
       </nav>
       <!-- banner section -->
-
+      <section>
+         <div class="hero min-h-fit bg-img-bg rounded-none md:rounded-lg border-0">
+            <div class="hero-overlay bg-gradient-to-r from-[#1110] to-[#1111] rounded-xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="text-center tex-white w-11/12 lg:w-9/12 xl:7/12 py-28">
+                <h1 class="mb-6 text-4xl lg:text-6xl xl:text-7xl font-extrabold font-eb-garamond">We Provide Effective<br>Legal Solutions</h1>
+                <p class="mb-8 font-poppins text-sm lg:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="flex justify-center gap-3">
+                  <input class="input input-bordered p-5 text-black join-item md:w-[500px]" placeholder="Search your services"/>
+                  <button class="bg-color-primary text-white font-semibold hover:text-color-primary hover:bg-gray-200 px-3ease-in-out duration-150  cursor-pointer text-xs md:text-base px-10 rounded-lg">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
    </header>
    <main class="">
 

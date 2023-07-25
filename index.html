@@ -22,6 +22,7 @@
                colors: {
                   'color-custom-gray': '#A0A0A0',
                   'color-custom-gray-2': '#707070',
+                  'color-custom-gray-3': '#F3F3F3',
                   'color-primary': '#B68C5A',
                },
                backgroundImage: {
@@ -302,7 +303,6 @@
                            has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
                            the more obscure Latin words, consectetur.</p>
-                        <button class="btn btn-primary">Get Started</button>
                      </div>
                   </div>
                </div>
@@ -385,7 +385,84 @@
          <!-- section header -->
          <div class="flex flex-col items-center mb-16 text-center">
             <h2 class="text-4xl font-eb-garamond mb-6">Contact With Us</h2>
-            <p class="text-gray-700 w-3/4 md:w-2/4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <p class="text-gray-700 w-3/4 md:w-2/4">There are many variations of passages of Lorem Ipsum available, but
+               the majority have suffered alteration in some form, by injected humour.</p>
+         </div>
+         <!-- contact container -->
+         <div class="flex gap-8 flex-col lg:flex-row">
+            <!-- contact cards -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2">
+               <!-- card 1 -->
+               <div class="card bg-color-custom-gray-3 rounded-none p-16 border-r border-b">
+                  <figure class="mb-4">
+                     <img src="./images/location.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center p-0">
+                     <h2 class="card-title font-eb-garamond font-extrabold mb-4">Office</h2>
+                     <p class="text-custom-gray-2 flex flex-col">
+                        <span>A108 Adam Street,</span>
+                        <span>New York, NY 535022</span>
+                     </p>
+                  </div>
+               </div>
+               <!-- card 2 -->
+               <div class="card bg-color-custom-gray-3 rounded-none p-16 border-b border-l">
+                  <figure class="mb-4">
+                     <img src="./images/call.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center p-0">
+                     <h2 class="card-title font-eb-garamond font-extrabold mb-4">Call Us</h2>
+                     <p class="text-custom-gray-2 flex flex-col">
+                        <span>+88 01750 00 00 00</span>
+                        <span>+88 01750 00 00 00</span>
+                     </p>
+                  </div>
+               </div>
+               <!-- card 3 -->
+               <div class="card bg-color-custom-gray-3 rounded-none p-16 border-t border-r">
+                  <figure class="mb-4">
+                     <img src="./images/email.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center p-0">
+                     <h2 class="card-title font-eb-garamond font-extrabold mb-4">Email Us</h2>
+                     <p class="text-custom-gray-2 flex flex-col">
+                        <span>info@gmail.com</span>
+                        <span>info@gmail.com</span>
+                     </p>
+                  </div>
+               </div>
+               <!-- card 4 -->
+               <div class="card bg-color-custom-gray-3 rounded-none p-16 border-t border-l">
+                  <figure class="mb-4">
+                     <img src="./images/time.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center p-0">
+                     <h2 class="card-title font-eb-garamond font-extrabold mb-4">Working Hours</h2>
+                     <p class="text-custom-gray-2 flex flex-col">
+                        <span>Mon-Fri: 9AM to 5PM</span>
+                        <span>Sunday: 9AM to 1PM</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- send message form -->
+            <div class="flex-1 flex items-center">
+               <form action="">
+                  <label for="name">
+                     <input type="text" id="name" placeholder="Your Name" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                  </label>
+                  <label for="email">
+                     <input type="email" id="email" placeholder="Your Email" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                  </label>
+                  <label for="subject">
+                     <input type="text" id="subject" placeholder="Subject" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg">
+                  </label>
+                  <label for="message">
+                     <textarea id="message" cols="30" rows="5" placeholder="Your Message" class="bg-color-custom-gray-3 mb-8 p-6 w-full rounded-lg"></textarea>
+                  </label>
+                  <input type="button" value="Send Message" class="bg-color-primary text-white font-semibold py-5 hover:text-color-primary hover:bg-gray-200 rounded md:rounded-lg ease-in-out duration-150 cursor-pointer text-base text-center w-full">
+               </form>
+            </div>
          </div>
       </section>
    </main>
